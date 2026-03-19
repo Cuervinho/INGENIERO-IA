@@ -10,8 +10,6 @@ Servicio de autenticación: login de usuarios
 - Devuelve un UserContext con la información del usuario si el login es exitoso
 - Si el login falla, devuelve None
 
-Hash_password: función para hashear la contraseña usando SHA-256 (no es la mejor opción para producción, pero sirve para este ejemplo)
-    ESTA FUNCIÓN ES LA MISMA DE generar_base_de_datos.py, podríamos moverla a un módulo utils.py para evitar duplicación
 """
 
 def hash_password(password: str) -> str:
