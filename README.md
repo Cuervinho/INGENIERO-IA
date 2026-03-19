@@ -19,6 +19,7 @@ python generar_base_datos.py
 3. Ejecutar modelo local (Ollama):
 
 ollama pull mistral
+
 ollama run mistral
 
 4. Ejecutar la aplicación:
