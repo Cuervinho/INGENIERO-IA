@@ -41,8 +41,8 @@ def main():
 
         results = process_question(user, question)
 
-        print("\n📊 Resultados:")
-        for r in results[:10]:  # limit simple
+        print("\n Resultados:")
+        for r in results[:30]:  # limit simple
             print(r)
 
 if __name__ == "__main__":
