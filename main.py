@@ -1,5 +1,12 @@
 # main.py
 
+"""
+Este es el punto de entrada de la aplicación. Aquí se maneja el flujo principal:
+- Login de usuario
+- Ejecución del servicio de monitoreo para obtener un reporte inicial
+- Preguntas en lenguaje natural 
+"""
+
 from auth.auth_service import login
 from services.nl_query_service import process_question
 from services.monitoring_service import run_monitoring
@@ -26,17 +33,17 @@ def main():
     print("\n REPORTE IA:\n")
     print(reporte)
 
-    # while True:
-    #     question = input("\nHaz una pregunta (o 'salir'): ")
+    while True:
+        question = input("\nHaz una pregunta (o 'salir'): ")
 
-    #     if question.lower() == "salir":
-    #         break
+        if question.lower() == "salir":
+            break
 
-    #     results = process_question(user, question)
+        results = process_question(user, question)
 
-    #     print("\n📊 Resultados:")
-    #     for r in results[:10]:  # limit simple
-    #         print(r)
+        print("\n📊 Resultados:")
+        for r in results[:10]:  # limit simple
+            print(r)
 
 if __name__ == "__main__":
     main()
