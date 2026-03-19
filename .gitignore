@@ -1,0 +1,18 @@
+# --- Python ---
+__pycache__/          # Ignora todas las carpetas de caché
+*.pyc                 # Ignora archivos compilados individuales
+*.pyo                 # Ignora archivos optimizados
+*.pyd                 # Ignora librerías dinámicas de Python
+
+# --- Entornos Virtuales ---
+venv/
+env/
+.env
+
+# --- Bases de datos y Temporales ---
+*.db                  # Ignora bases de datos SQLite como la de tu imagen
+*.log                 # Ignora archivos de registro de errores
+
+# --- Archivos de Sistema/Editores ---
+.vscode/              # Configuraciones de tu VS Code personal
+.DS_Store             # Archivos invisibles de basura en Mac
